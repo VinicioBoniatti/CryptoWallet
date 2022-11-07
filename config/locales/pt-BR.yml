@@ -1,0 +1,14 @@
+'pt-BR':
+  config:
+    show: "Mostrar"
+    edit: "Editar"
+    destroy: "Deletar"
+    back: "Voltar"
+  mensagens:
+    confirm: "Tem certeza?"
+  title:
+    welcome: "Bem vindo ao CryptoWallet"
+    new_coin: "Nova moeda"
+    new_miningtype: "Novo tipo de mineração"
+  text:
+    welcome: "Aqui você pode cadastrar e controlar as suas cryptomoedas"

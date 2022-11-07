@@ -1,0 +1,26 @@
+<h2> <%= "#{Coin.model_name.human}"%> </h2>
+<br>
+<form>
+  
+    <div class="col-md-6">
+      <%= label_tag nil, @coin.class.human_attribute_name(:description) %>
+      <%= text_field_tag nil, @coin.description, class:"form-control", disabled: true %>
+    </div>
+
+    <div class="col-md-6">
+      <%= label_tag nil, @coin.class.human_attribute_name(:acronym) %>
+      <%= text_field_tag nil, @coin.acronym , class:"form-control", disabled: true  %>
+    </div>
+
+    <div class="col-md-6">
+      <%= label_tag nil, @coin.class.human_attribute_name(:url) %>
+      <%= text_field_tag nil,@coin.url, class:"form-control", disabled: true  %>
+    </div>
+
+    <div class="col-md-6">
+      <%= label_tag nil, @coin.class.human_attribute_name(:mining_type) %>
+      <%= text_field_tag nil,@coin.mining_type.description, class:"form-control", disabled: true  %>
+    </div>
+</form>
+  <%= link_to t('config.edit'), edit_coin_path(@coin), class:"btn btn-primary" %>
+  <%= link_to t('config.back'), coins_path, class:"btn btn-primary" %>

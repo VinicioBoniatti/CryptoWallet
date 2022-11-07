@@ -1,0 +1,15 @@
+en:
+  config:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+  mensagens:
+    confirm: "Are you sure?"
+  title: 
+    welcome: "Welcome to CryptoWallet"
+    new_coin: "New coin"
+    new_miningtype: "New Mining Type"
+  text:
+    welcome: "Here you can register and control your coins"
+  

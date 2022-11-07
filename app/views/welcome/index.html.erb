@@ -1,0 +1,17 @@
+<div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"><%= t('title.welcome')%></h1>
+        <p class="lead text-muted"><%= t('text.welcome')%></p>
+        <hr class="my-4">
+        <p>
+          <%= link_to "#{Coin.model_name.human}", coins_path, class:"btn btn-primary btn-lg" %> 
+          <%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-secondary btn-lg" %> 
+        </p>
+      </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= Coin.model_name.human(count: @coins.count)%></h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th><%= Coin.human_attribute_name(:description)%></th>
+      <th><%= Coin.human_attribute_name(:acronym)%></th>
+      <th><%= Coin.human_attribute_name(:url)%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coins.each do |coin| %>
+      <tr>
+        <td><%= coin.description %></td>
+        <td><%= coin.acronym %></td>
+        <td><%= image_tag coin.url, size: "25x25" %></td>
+        <td><%= link_to t('config.show'), coin %></td>
+        <td><%= link_to t('config.edit'), edit_coin_path(coin) %></td>
+        <td><%= link_to t('config.destroy'), coin, method: :delete, data: { confirm: t('mensagens.confirm') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div>
+  <%= link_to t('title.new_coin'), new_coin_path, class:"btn btn-secondary btn-lg" %>
+  <%= link_to t('config.back'), welcome_index_path, class:"btn btn-secondary btn-lg" %>
+</div>

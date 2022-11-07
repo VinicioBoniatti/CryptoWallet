@@ -1,0 +1,9 @@
+<h2>Editing Coin</h2>
+
+<%= render 'form', coin: @coin %>
+
+<div>
+    <%= link_to t('config.show'), @coin, class:"btn btn-primary" %> 
+    <%= link_to t('config.back'), coins_path, class:"btn btn-primary" %>
+</div>
+
